@@ -3,7 +3,7 @@
     --primary-font-color: #111f22;
     --secondary-color: #17262d;
     --border-color-1: #355562;
-
+    --green-color: #75f94c;
     --font-color: #ffffff;
 
     --button-color-gradient: linear-gradient(45deg, #355562 0%, #4b8e5a 100%);
@@ -53,7 +53,7 @@ body {
 
 /* AO CLICAR  NA CAIXA DO TEXTO, A BORDA FICA VERDE */
 .format-box:focus-within {
-    border-color: #75f94c;
+    border-color: var(--green-color);
 }
 
 /* DIV DOS BOTÕES SUPERIORES*/

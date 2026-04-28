@@ -1,0 +1,84 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --primary-font-color: #111f22;
+    --secondary-color: #17262d;
+    --border-color-1: #355562;
+    --font-color: #ffffff;
+    --button-color-gradient: linear-gradient(45deg, #355562 0%, #4b8e5a 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--font-color);
+}
+
+.center-main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hub-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hub-box svg {
+    margin-bottom: 20px;
+}
+
+.hub-box h3 {
+    margin: 26px 0 26px 0;
+    font-weight: 500;
+}
+
+.login-form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label,
+input {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+.login-form label {
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 500;
+}
+
+.login-form input {
+    padding: 12px;
+    background-color: var(--border-color-1);
+    border: 1px solid var(--font-color);
+    border-radius: 12px;
+    color: var(--font-color);
+}
+
+.login-form input::placeholder {
+    color: #ffffff86;
+    font-size: 12px;
+    font-family: var(--font-family);
+}
+
+.login-form input:focus {
+    border: 1px solid var(--green-color);
+    outline: none;
+}
+
+.login-form button {
+    margin-top: 10px;
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+}
