@@ -2,6 +2,8 @@ document.getElementById("format-button").addEventListener("click", function () {
     const textarea = document.getElementById("lista-pecas");
     const linhas = textarea.value.split("\n");
 
+    const MARGEM = 0.15; // ALTERAR O VALOR DA PORCENTAGEM
+
     let erro = false;
 
     const resultado = linhas
@@ -38,7 +40,9 @@ document.getElementById("format-button").addEventListener("click", function () {
 
             const maiorPreco = Math.max(...precos);
 
-            const precoFormatado = maiorPreco.toLocaleString("pt-BR", {
+            const precoComMargem = Math.ceil(maiorPreco * (1 + MARGEM));
+
+            const precoFormatado = precoComMargem.toLocaleString("pt-BR", {
                 style: "currency",
                 currency: "BRL",
             });
@@ -56,6 +60,7 @@ document.getElementById("format-button").addEventListener("click", function () {
     textarea.value = resultado.join("\n");
 });
 
+//FUNÇÃO PARA COPIAR COM BOTÃO DIRETO
 document.getElementById("copy-button").addEventListener("click", function () {
     const textarea = document.getElementById("lista-pecas");
     navigator.clipboard
