@@ -13,6 +13,7 @@
         />
 
         <link rel="stylesheet" href="/styles/styleFormat.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/zaga-hub-icon.png" />
     </head>
     <body>
         <main class="main-box">
@@ -53,39 +54,7 @@
                         Formatar Orçamento
                     </button>
 
-                    <button class="normal-button" id="copy-button">
-                        <svg
-                            width="32"
-                            height="32"
-                            viewBox="0 0 32 32"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                        >
-                            <rect width="32" height="32" fill="url(#pattern0_778_162)" />
-                            <defs>
-                                <pattern
-                                    id="pattern0_778_162"
-                                    patternContentUnits="objectBoundingBox"
-                                    width="1"
-                                    height="1"
-                                >
-                                    <use xlink:href="#image0_778_162" transform="scale(0.00961538 0.01)" />
-                                </pattern>
-                                <image
-                                    id="image0_778_162"
-                                    width="100"
-                                    height="100"
-                                    preserveAspectRatio="none"
-                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADBUlEQVR4nO3dTYhNYRzH8ccsaFDYCWVjZaPISkLsNEtZWChFYrwsvJSXSNkoiS41ZWUWZqYUC1lYkNhIKay9LJEpG28xXz05s3xmzHTPub/nOb9PPaupe5//+d5zZ+6cuicEMzOzggArgVPAA+BFj9Y9YGtoM6APuAD8QMMEcCi0ETAHuI2edkYBjqOrXVGAxcBXtLUnCrCbPEwAh0PpgGuJA/AFOAbsa2ANzSBK2WcKMJIYfqjBPeyY4ZlSbhRgLDF4RzRI2W9fmQYpN4p4kD/VgW/P25d4kE/A3v+IUs6Zoh4k/Pt5e6LkEKRVUXIJ0pooOQWJqg+S2lGA+cAqYN0s1sOcgkTAoNxfX9W/zHcCT4DfdF9HNYhcFGBRdUWvTh2BIJ+BJVOss9PMUH8UYG51VtCCIN0QowzWufnpXhXd0qltiGaDUL2lr69j4/0NXkzqdH2A3gWJrtSx8e00p9P1AdJzbWxgnrE6Nn408WQfgdXT/AJMrbsCQfqBd2QY5FziyR7n/MEwAtYAr3MLcj7xZI9yDzIJWD7LD7iTKzWPg/RC3LeDCHEQMQ4ixkHEOIgYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGIcRIyDiHEQMQ4ixkHElBBkNPGYN0KG4r4T84zmEiQ1wFtgANiW0RqY4gsIrucS5ADtsD+XIMuAn5Qt3qRmaRZBqse9TNkuda9CM0HmAc8o09M4X/cqNBCkeuyFU/wJnKt4G6cF3Tn6DQeZBGwGhoEPwC/yEvf7HrgFbAp1ayJIk4CDiXnehBw4iBgHEeMgYhxEjIOIcRAxDiLGQcQApxMDPA8ZAk4k5nkZcgDsIe1OdQvTXNZNYDwxy/2Qg+ouOm1wMuQifq04ZfsGrAi5ANYC3ynXmZCb6t5TJV52HQb6Qo6ADcAryjAOHIk3Ogs5i68mYAtwsbooM5bRGgGuArviTc56fSzNzMzMzMxCD/wFpbhzDu6W1XgAAAAASUVORK5CYII="
-                                />
-                            </defs>
-                        </svg>
-
-                        Copiar Resultado
-                    </button>
-
-                    <button class="normal-button" id="copy-button">
+                    <button class="normal-button" id="save-button">
                         <svg
                             width="32"
                             height="32"
@@ -116,13 +85,86 @@
 
                         Salvar Orçamento
                     </button>
+
+                    <button class="normal-button" id="copy-button">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <rect width="32" height="32" fill="url(#pattern0_778_162)" />
+                            <defs>
+                                <pattern
+                                    id="pattern0_778_162"
+                                    patternContentUnits="objectBoundingBox"
+                                    width="1"
+                                    height="1"
+                                >
+                                    <use xlink:href="#image0_778_162" transform="scale(0.00961538 0.01)" />
+                                </pattern>
+                                <image
+                                    id="image0_778_162"
+                                    width="100"
+                                    height="100"
+                                    preserveAspectRatio="none"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADBUlEQVR4nO3dTYhNYRzH8ccsaFDYCWVjZaPISkLsNEtZWChFYrwsvJSXSNkoiS41ZWUWZqYUC1lYkNhIKay9LJEpG28xXz05s3xmzHTPub/nOb9PPaupe5//+d5zZ+6cuicEMzOzggArgVPAA+BFj9Y9YGtoM6APuAD8QMMEcCi0ETAHuI2edkYBjqOrXVGAxcBXtLUnCrCbPEwAh0PpgGuJA/AFOAbsa2ANzSBK2WcKMJIYfqjBPeyY4ZlSbhRgLDF4RzRI2W9fmQYpN4p4kD/VgW/P25d4kE/A3v+IUs6Zoh4k/Pt5e6LkEKRVUXIJ0pooOQWJqg+S2lGA+cAqYN0s1sOcgkTAoNxfX9W/zHcCT4DfdF9HNYhcFGBRdUWvTh2BIJ+BJVOss9PMUH8UYG51VtCCIN0QowzWufnpXhXd0qltiGaDUL2lr69j4/0NXkzqdH2A3gWJrtSx8e00p9P1AdJzbWxgnrE6Nn408WQfgdXT/AJMrbsCQfqBd2QY5FziyR7n/MEwAtYAr3MLcj7xZI9yDzIJWD7LD7iTKzWPg/RC3LeDCHEQMQ4ixkHEOIgYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGIcRIyDiHEQMQ4ixkHEOIgYBxHjIGIcRIyDiHEQMQ4ixkHElBBkNPGYN0KG4r4T84zmEiQ1wFtgANiW0RqY4gsIrucS5ADtsD+XIMuAn5Qt3qRmaRZBqse9TNkuda9CM0HmAc8o09M4X/cqNBCkeuyFU/wJnKt4G6cF3Tn6DQeZBGwGhoEPwC/yEvf7HrgFbAp1ayJIk4CDiXnehBw4iBgHEeMgYhxEjIOIcRAxDiLGQcQApxMDPA8ZAk4k5nkZcgDsIe1OdQvTXNZNYDwxy/2Qg+ouOm1wMuQifq04ZfsGrAi5ANYC3ynXmZCb6t5TJV52HQb6Qo6ADcAryjAOHIk3Ogs5i68mYAtwsbooM5bRGgGuArviTc56fSzNzMzMzMxCD/wFpbhzDu6W1XgAAAAASUVORK5CYII="
+                                />
+                            </defs>
+                        </svg>
+
+                        Copiar
+                    </button>
+
+                    <button class="normal-button" id="clear-button">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                            <rect width="32" height="32" fill="url(#pattern0_803_9)" />
+                            <defs>
+                                <pattern
+                                    id="pattern0_803_9"
+                                    patternContentUnits="objectBoundingBox"
+                                    width="1"
+                                    height="1"
+                                >
+                                    <use xlink:href="#image0_803_9" transform="scale(0.01)" />
+                                </pattern>
+                                <image
+                                    id="image0_803_9"
+                                    width="100"
+                                    height="100"
+                                    preserveAspectRatio="none"
+                                    xlink:href="data:image/png;base64,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"
+                                />
+                            </defs>
+                        </svg>
+                        Limpar
+                    </button>
                 </div>
 
                 <div id="notification" class="notification"></div>
 
                 <textarea id="lista-pecas" placeholder="Cole a lista de peças aqui..."></textarea>
 
-                <div class="foot-bottons"></div>
+                <div class="foot-bottons">
+                    <button class="normal-foot-button" id="lower-button">
+                        <span>lc</span>
+                        minúsculas
+                    </button>
+
+                    <button class="normal-foot-button" id="upper-button">
+                        <span>UC</span>
+                        MAIÚSCULAS
+                    </button>
+                </div>
             </div>
         </main>
 

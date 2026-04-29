@@ -77,3 +77,28 @@ document.getElementById("copy-button").addEventListener("click", function () {
             console.error("Erro ao copiar: ", err);
         });
 });
+
+//FUNÇÃO PARA LIMPAR O TEXTO COM BOTÃO
+document.getElementById("clear-button").addEventListener("click", function () {
+    const textarea = document.getElementById("lista-pecas");
+    textarea.value = "";
+    // NOTIFICAÇÃO DE LIMPEZA
+    const notification = document.getElementById("notification");
+    notification.textContent = "Texto limpo!";
+    notification.style.display = "block";
+    setTimeout(() => {
+        notification.style.display = "none";
+    }, 3000);
+});
+
+//FUNÇÃO PARA COLOCAR EM MINÚSCULAS COM BOTÃO
+document.getElementById("lower-button").addEventListener("click", function () {
+    const textarea = document.getElementById("lista-pecas");
+    textarea.value = textarea.value.toLowerCase();
+});
+
+//FUNÇÃO PARA COLOCAR EM MAIÚSCULAS COM BOTÃO
+document.getElementById("upper-button").addEventListener("click", function () {
+    const textarea = document.getElementById("lista-pecas");
+    textarea.value = textarea.value.toUpperCase();
+});

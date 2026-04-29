@@ -39,8 +39,8 @@ body {
 
 /* CONTAINER CONTENDO OS BOTÕES E A AREA DE COLAGEM PARA FORMATAÇÃO*/
 .format-box {
+    box-sizing: border-box;
     width: 1200px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -51,13 +51,9 @@ body {
     border-radius: 10px;
 }
 
-/* AO CLICAR  NA CAIXA DO TEXTO, A BORDA FICA VERDE */
-.format-box:focus-within {
-    border-color: var(--green-color);
-}
-
 /* DIV DOS BOTÕES SUPERIORES*/
 .top-buttons {
+    padding: 10px;
     display: flex;
     gap: 10px;
 }
@@ -79,13 +75,13 @@ body {
     cursor: pointer;
 }
 
+.normal-button:hover {
+    opacity: 0.8;
+}
+
 /* BOTÃO COM FUNDO ESPECIAL*/
 .especial-button {
     background-image: var(--button-color-gradient);
-}
-
-.normal-button:hover {
-    opacity: 0.8;
 }
 
 #copy-button {
@@ -95,22 +91,24 @@ body {
 /* AREA DE COLAGEM DA LISTA DE PEÇAS */
 #lista-pecas {
     width: 100%;
-    min-height: 250px;
+    min-height: 300px;
     resize: vertical;
     box-sizing: border-box;
 
     border: none;
-    border-radius: 10px;
     background-color: var(--secondary-color);
     color: var(--font-color);
 
-    padding: 10px;
-    padding-top: 20px;
+    padding: 20px;
     font-family: inherit;
     font-size: 14px;
     line-height: 1.4;
-
     outline: none;
+}
+
+/* AO CLICAR  NA CAIXA DO TEXTO, A BORDA FICA VERDE */
+#lista-pecas:focus {
+    border: 1px solid var(--green-color);
 }
 
 #lista-pecas::placeholder {
@@ -130,4 +128,40 @@ body {
     font-weight: 600;
     display: none;
     z-index: 10;
+}
+
+.normal-foot-button {
+    padding: 6px 10px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-font-color);
+    color: var(--font-color);
+    font: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid var(--font-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.foot-bottons {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--border-color-1);
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.normal-foot-button span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--green-color);
+}
+
+.normal-foot-button:hover {
+    background-color: var(--border-color-1);
 }
