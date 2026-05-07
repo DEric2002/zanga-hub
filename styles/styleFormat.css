@@ -26,15 +26,12 @@ body {
 }
 
 .title {
-    width: 100%;
+    box-sizing: border-box;
+    width: 1200px;
     display: flex;
     justify-content: start;
     align-items: center;
     color: var(--font-color);
-}
-
-.title h3 {
-    margin-left: 16px;
 }
 
 /* CONTAINER CONTENDO OS BOTÕES E A AREA DE COLAGEM PARA FORMATAÇÃO*/
