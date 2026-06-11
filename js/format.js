@@ -102,3 +102,28 @@ document.getElementById("upper-button").addEventListener("click", function () {
     const textarea = document.getElementById("lista-pecas");
     textarea.value = textarea.value.toUpperCase();
 });
+
+// CARREGAR O ITEM ATIVO DO LOCALSTORAGE AO CARREGAR A PÁGINA
+const activeItem = localStorage.getItem("activeMenuItem");
+if (activeItem) {
+    document.querySelectorAll(".side-item").forEach((item) => {
+        const span = item.querySelector("span");
+        if (span && span.textContent.trim() === activeItem) {
+            item.classList.add("active-page");
+        }
+    });
+}
+
+// ADICIONAR EVENT LISTENERS PARA ALTERNAR O ITEM ATIVO
+document.querySelectorAll(".side-item").forEach((item) => {
+    item.addEventListener("click", () => {
+        const span = item.querySelector("span");
+        if (span) {
+            localStorage.setItem("activeMenuItem", span.textContent.trim());
+        }
+        // Remove active-page from all items
+        document.querySelectorAll(".side-item").forEach((i) => i.classList.remove("active-page"));
+        // Add active-page to the clicked item
+        item.classList.add("active-page");
+    });
+});
