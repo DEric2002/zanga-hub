@@ -83,7 +83,9 @@ a {
     padding-left: 10px;
 }
 
+/* FORMULÁRIO DE LOGIN */
 .center-main-box {
+    color: var(--font-color);
     display: flex;
     flex-direction: column;
     align-items: center;
