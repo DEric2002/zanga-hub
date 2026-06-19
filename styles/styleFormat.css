@@ -3,6 +3,10 @@
 /* Regras específicas de formatação permanecem neste arquivo */
 /* .main-box e .title são fornecidos por stylepatern.css */
 
+.main-box {
+    padding-left: 60px;
+}
+
 /* CONTAINER CONTENDO OS BOTÕES E A AREA DE COLAGEM PARA FORMATAÇÃO*/
 .format-box {
     box-sizing: border-box;

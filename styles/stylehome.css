@@ -4,3 +4,6 @@
 
 /* CONTAINER PRINCIPAL ONDE TODO O CONTEÚDO É ORGANIZADO */
 /* .main-box e .title são fornecidos por stylepatern.css */
+.main-box {
+    padding-left: 60px;
+}
