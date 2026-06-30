@@ -1,0 +1,82 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --primary-color: #111f22;
+    --secondary-color: #233946;
+    --border-color-1: #355562;
+    --green-color: #75f94c;
+    --font-color: #ffffff;
+    --button-color-gradient: linear-gradient(45deg, #355562 0%, #4b8e5a 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.menu-lateral {
+    padding: 24px 6px 0;
+    width: 70px;
+    height: 100%;
+    background-color: var(--secondary-color);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-lateral:hover {
+    width: 180px;
+}
+
+.menu-lateral .expandir {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    padding: 40px 0;
+}
+
+ul .item-menu {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    margin: 4px 12px;
+    padding: 6px 0 6px 6px;
+    border-radius: 5px;
+}
+
+ul .item-menu:hover {
+    background-color: #45555E;
+}
+
+ul .item-menu {
+    transition: .2s;
+}
+
+ul li a {
+    font-weight: 500;
+    color: var(--font-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+ul li a .icon {
+    width: 28px;
+    height: 28px;
+}

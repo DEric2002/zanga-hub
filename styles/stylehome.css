@@ -1,9 +1,0 @@
-@import "stylepatern.css";
-
-/* Regras específicas da página inicial permanecem neste arquivo */
-
-/* CONTAINER PRINCIPAL ONDE TODO O CONTEÚDO É ORGANIZADO */
-/* .main-box e .title são fornecidos por stylepatern.css */
-.main-box {
-    padding-left: 60px;
-}
